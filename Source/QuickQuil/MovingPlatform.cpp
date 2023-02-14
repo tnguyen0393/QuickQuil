@@ -32,8 +32,6 @@ void AMovingPlatform::Tick(float DeltaTime)
 }
 
 void AMovingPlatform::MovePlatform(float DeltaTime) {
-
-
 	if (ShouldPlatformReturn()) {
 		FVector MoveDirection = PlatformVelocity.GetSafeNormal();
 		StartLocation = StartLocation + MoveDirection * MoveDistance;
